@@ -1,0 +1,10 @@
+var a = 2;
+var b = 0;
+b += a;
+a += 3;
+a -= 1;
+a *= 6;
+a /= 2;
+a %= 2;
+console.log(a);
+console.log(b);
