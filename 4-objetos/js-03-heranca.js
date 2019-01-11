@@ -37,9 +37,16 @@ Object.setPrototypeOf(volvo, carro)
 // exibe apenas propriedades declaradas explicitamente nos objetos
 console.log(ferrari)
 console.log(volvo)
- 
+
 // mas ainda pode acessar as propriedades herdadas
 volvo.acelerarMais(100)
 console.log(volvo.status())
 ferrari.acelerarMais(300)
 console.log(ferrari.status())
+
+// mostra propriedades próprias ou as de herança
+for (let key in volvo) {
+    volvo.hasOwnProperty(key) ?
+        console.log(key) : console.log(`Por herança: ${key}`)
+}
+ 
