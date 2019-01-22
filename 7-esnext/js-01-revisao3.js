@@ -1,32 +1,32 @@
 // Object.values
-const obj = { a: 1, b: 2, c:3 }
-console.log(Object.values(obj))
+const obj = { a: 1, b: 2, c: 3 };
+console.log(Object.values(obj));
 
 // Object.entries
-console.log(Object.entries(obj))
+console.log(Object.entries(obj));
 
 // notação literal de criação de objetos
-const nome = 'Rafael'
+const nome = 'Rafael';
 const pessoa = {
-    nome, 
-    saudacao(nome = this.nome) {
-        return `Olá ${nome}`
-    }
-}
-console.log(pessoa.nome)
-console.log(pessoa.saudacao())
+  nome,
+  saudacao(nome = this.nome) {
+    return `Olá ${nome}`;
+  }
+};
+console.log(pessoa.nome);
+console.log(pessoa.saudacao());
 
 // herança de classe
 class Animal {
-    oQueSou() {
-        return 'Sou um animal.'
-    }
+  oQueSou() {
+    return 'Sou um animal.';
+  }
 }
 class Cachorro extends Animal {
-    queAnimal() {
-        return 'Sou cachorro!'
-    }
+  queAnimal() {
+    return 'Sou cachorro!';
+  }
 }
-const cachorro = new Cachorro()
-console.log(cachorro.oQueSou())
-console.log(cachorro.queAnimal())
+const cachorro = new Cachorro();
+console.log(cachorro.oQueSou());
+console.log(cachorro.queAnimal());

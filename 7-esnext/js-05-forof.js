@@ -1,33 +1,33 @@
 // percorre as estruturas acessando não indices, mas valores
-for (let letra of 'Rafael') {
-    console.log(letra)
+for (const letra of 'Rafael') {
+  console.log(letra);
 }
 
-const assuntosEcma = ['Map', 'Set', 'Promise']
-for (let assunto of assuntosEcma) {
-    console.log(assunto)
+const assuntosEcma = ['Map', 'Set', 'Promise'];
+for (const assunto of assuntosEcma) {
+  console.log(assunto);
 }
 
 const assuntosMap = new Map([
-    ['Map', { abordado: true }],
-    ['Set', { abordado: true }],
-    ['Promise', { abordado: false }]
-])
+  ['Map', { abordado: true }],
+  ['Set', { abordado: true }],
+  ['Promise', { abordado: false }]
+]);
 
-for (let assunto of assuntosMap) {
-    console.log(assunto)
+for (const assunto of assuntosMap) {
+  console.log(assunto);
 }
-for (let chave of assuntosMap.keys()) {
-    console.log(chave)
+for (const chave of assuntosMap.keys()) {
+  console.log(chave);
 }
-for (let valor of assuntosMap.values()) {
-    console.log(valor)
+for (const valor of assuntosMap.values()) {
+  console.log(valor);
 }
-for (let [ch, vl] of assuntosMap.entries()) {
-    console.log(ch, vl)
+for (const [ch, vl] of assuntosMap.entries()) {
+  console.log(ch, vl);
 }
 
-const s = new Set(['a', 'b', 'c'])
-for (let letra of s) {
-    console.log(letra)
+const s = new Set(['a', 'b', 'c']);
+for (const letra of s) {
+  console.log(letra);
 }
